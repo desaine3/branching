@@ -11,3 +11,11 @@
  *= require_self
  *= require_tree .
  */
+.navbar{
+    background-color:pink;
+    border-radius: 0;
+}
+
+.nav navbar-nav li{
+list-style-type: none;
+}
