@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  trip_Name: MyString
+  trip_Leaders: MyString
+  trip_Area: MyString
+  trip_Location: MyString
+  start_date: 2013-08-20
+  end_Date: 2013-08-20
+  trip_Cost: 1
+  trip_description: MyText
+  completed: false
+
+two:
+  trip_Name: MyString
+  trip_Leaders: MyString
+  trip_Area: MyString
+  trip_Location: MyString
+  start_date: 2013-08-20
+  end_Date: 2013-08-20
+  trip_Cost: 1
+  trip_description: MyText
+  completed: false

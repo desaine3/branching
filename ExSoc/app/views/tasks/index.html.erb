@@ -1,0 +1,43 @@
+<h1>Listing tasks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Trip name</th>
+      <th>Trip leaders</th>
+      <th>Trip area</th>
+      <th>Trip location</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Trip cost</th>
+      <th>Trip description</th>
+      <th>Completed</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.trip_Name %></td>
+        <td><%= task.trip_Leaders %></td>
+        <td><%= task.trip_Area %></td>
+        <td><%= task.trip_Location %></td>
+        <td><%= task.start_date %></td>
+        <td><%= task.end_Date %></td>
+        <td><%= task.trip_Cost %></td>
+        <td><%= task.trip_description %></td>
+        <td><%= task.completed %></td>
+        <td><%= link_to 'Show', task %></td>
+        <td><%= link_to 'Edit', edit_task_path(task) %></td>
+        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Task', new_task_path %>

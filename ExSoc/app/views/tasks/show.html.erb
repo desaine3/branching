@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Trip name:</strong>
+  <%= @task.trip_Name %>
+</p>
+
+<p>
+  <strong>Trip leaders:</strong>
+  <%= @task.trip_Leaders %>
+</p>
+
+<p>
+  <strong>Trip area:</strong>
+  <%= @task.trip_Area %>
+</p>
+
+<p>
+  <strong>Trip location:</strong>
+  <%= @task.trip_Location %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @task.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @task.end_Date %>
+</p>
+
+<p>
+  <strong>Trip cost:</strong>
+  <%= @task.trip_Cost %>
+</p>
+
+<p>
+  <strong>Trip description:</strong>
+  <%= @task.trip_description %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @task.completed %>
+</p>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

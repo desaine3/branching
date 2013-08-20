@@ -1,0 +1,53 @@
+<%= form_for(@task) do |f| %>
+  <% if @task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+      <% @task.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :trip_Name %><br>
+    <%= f.text_field :trip_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_Leaders %><br>
+    <%= f.text_field :trip_Leaders %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_Area %><br>
+    <%= f.text_field :trip_Area %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_Location %><br>
+    <%= f.text_field :trip_Location %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_Date %><br>
+    <%= f.date_select :end_Date %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_Cost %><br>
+    <%= f.number_field :trip_Cost %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_description %><br>
+    <%= f.text_area :trip_description %>
+  </div>
+  <div class="field">
+    <%= f.label :completed %><br>
+    <%= f.check_box :completed %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
