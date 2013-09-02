@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ .navbar{
+    background-color:#118551;
+    border-radius: 0;
+}
+
+.navbar-nav > li >a{
+   
+        list-style-type: none;
+         color:white;
+    
+}
+
+.row {
+    padding:10px;
+}
+
+.thumbnail{
+background-color:;
+height:300px;
+}
+
+.btn btn-primary{
+bottom:5px;
+background-color: green;
+float:center;
+}
+
+.landing{
+ width:100%;
+margin-top: -20px;
+  height: 600px;
+  background: url('exsoc.jpg');
+  background-repeat: no-repeat no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.lanfloat{
+  width:100%;
+  margin-top:-500px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  float:left;
+  top: 200px;
+}
+
+h6{
+    font-size: 25px;
+    font-family:"Times New Roman",Times,serif, bold;
+    color:#204D1C;
+    font-weight: bold;
+    float:left;
+    margin-left: 30%;
+}
+
+.enter_site > p{
+    float:right;
+    margin-right: 40%;
+    margin-top: 7px;
+}
+
+
+
